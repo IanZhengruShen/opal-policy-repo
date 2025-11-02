@@ -3,28 +3,35 @@
     "alice": {
       "roles": ["admin"],
       "location": {
-        "country": "US",
+        "country": "NL",
         "ip": "8.8.8.8"
       }
     },
     "bob": {
       "roles": ["employee", "billing"],
       "location": {
-        "country": "US",
+        "country": "NL",
         "ip": "8.8.8.8"
       }
     },
-     "sunil": {
+    "sunil": {
       "roles": ["guest"],
       "location": {
-        "country": "US",
-        "ip": "8.8.8.8"
+        "country": "IN",
+        "ip": "0.0.0.0"
       }
     },
+    "greg": {
+      "roles": ["guest"],
+      "location": {
+        "country": "NL",
+        "ip": "0.0.0.0"
+      }
+    },    
     "eve": {
       "roles": ["customer"],
       "location": {
-        "country": "US",
+        "country": "NL",
         "ip": "8.8.8.8"
       }
     }
@@ -33,57 +40,37 @@
     "customer": [
       {
         "action": "read",
-        "type": "dog"
+        "type": "chinook"
       },
       {
         "action": "read",
-        "type": "cat"
+        "type": "sakila"
       },
       {
-        "action": "adopt",
-        "type": "dog"
-      },
-      {
-        "action": "adopt",
-        "type": "cat"
+        "action": "read",
+        "type": "northwind"
       }
     ],
     "employee": [
       {
         "action": "read",
-        "type": "dog"
+        "type": "chinook"
       },
       {
         "action": "read",
-        "type": "cat"
-      },
-      {
-        "action": "update",
-        "type": "dog"
-      },
-      {
-        "action": "update",
-        "type": "cat"
+        "type": "sakila"
       }
     ],
     "billing": [
       {
         "action": "read",
-        "type": "finance"
-      },
-      {
-        "action": "update",
-        "type": "finance"
+        "type": "northwind"
       }
     ],
     "guest": [
      {
        "action": "read",
-       "type": "cat"
-     },
-     {
-       "action": "read",
-       "type": "finance"
+       "type": "chinook"
      }
     ]
   }
