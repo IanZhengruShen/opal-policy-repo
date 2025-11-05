@@ -8,14 +8,14 @@
       }
     },
     "bob": {
-      "roles": ["employee", "billing"],
+      "roles": ["analyst"],
       "location": {
         "country": "NL",
         "ip": "8.8.8.8"
       }
     },
     "sunil": {
-      "roles": ["guest"],
+      "roles": ["viewer"],
       "location": {
         "country": "IN",
         "ip": "0.0.0.0"
@@ -29,7 +29,7 @@
       }
     },    
     "eve": {
-      "roles": ["customer"],
+      "roles": ["user"],
       "location": {
         "country": "NL",
         "ip": "8.8.8.8"
@@ -37,7 +37,7 @@
     }
   },
   "role_permissions": {
-    "customer": [
+    "analyst": [
       {
         "action": "read",
         "type": "chinook"
@@ -51,7 +51,7 @@
         "type": "northwind"
       }
     ],
-    "employee": [
+    "view": [
       {
         "action": "read",
         "type": "chinook"
@@ -61,17 +61,11 @@
         "type": "sakila"
       }
     ],
-    "billing": [
+    "user": [
       {
         "action": "read",
         "type": "northwind"
       }
-    ],
-    "guest": [
-     {
-       "action": "read",
-       "type": "chinook"
-     }
     ]
   }
 }
