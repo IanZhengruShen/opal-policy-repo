@@ -1,41 +1,4 @@
 {
-  "users": {
-    "alice": {
-      "roles": ["admin"],
-      "location": {
-        "country": "NL",
-        "ip": "8.8.8.8"
-      }
-    },
-    "bob": {
-      "roles": ["analyst"],
-      "location": {
-        "country": "NL",
-        "ip": "8.8.8.8"
-      }
-    },
-    "sunil": {
-      "roles": ["viewer"],
-      "location": {
-        "country": "IN",
-        "ip": "0.0.0.0"
-      }
-    },
-    "greg": {
-      "roles": ["guest"],
-      "location": {
-        "country": "NL",
-        "ip": "0.0.0.0"
-      }
-    },    
-    "eve": {
-      "roles": ["user"],
-      "location": {
-        "country": "NL",
-        "ip": "8.8.8.8"
-      }
-    }
-  },
   "role_permissions": {
     "analyst": [
       {
@@ -51,7 +14,7 @@
         "type": "northwind"
       }
     ],
-    "view": [
+    "viewer": [
       {
         "action": "read",
         "type": "chinook"
